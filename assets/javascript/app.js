@@ -1,1 +1,1 @@
-alert("Wlecome to the Trivia game")
+alert("Wlecome to phil's Trivia game")
