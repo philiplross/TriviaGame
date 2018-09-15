@@ -1,0 +1,1 @@
+alert("Wlecome to the Trivia game")
