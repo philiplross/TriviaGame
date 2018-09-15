@@ -1,5 +1,42 @@
 alert("Wlecome to phil's Trivia game, Just remeber you have 120 seconds to finish the game before it ends. Goodluck!");
 
+var MyFunction = function(){
+
+    var counter = 10;
+    var timer = null;
+ 
+    function countdown(){
+        if (counter == 120) {
+            $(".time_box").html(counter);
+        }
+        if (counter <= 0) {
+            stopInterval();
+        }
+        else {
+            counter--;
+            $(".time_box").html(counter);
+        }
+     }
+     function reset() {
+        clearInterval(timer);
+        counter=0;
+     }
+     function startInterval() {
+        $(".time_box").html(counter);
+        timer= setInterval(countdown, 1000);
+     }
+     function stopInterval() {
+        clearInterval(timer);
+     }
+ 
+     return {
+       startInterval: startInterval
+     }
+     $("#countdown").attr(MyFunction)
+ }();
+
+
+
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var grand = 0;
