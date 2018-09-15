@@ -2,10 +2,11 @@ alert("Wlecome to phil's Trivia game, Just remeber you have 120 seconds to finis
 
 var correctAnswers = 0;
 var incorrectAnswers = 0;
+var grand = 0;
 
 $("#q1a").click(function(){
     correctAnswers + 1;
-  
+    return grand + correctAnswers;
 });
 
 $("#q1b").click(function(){
@@ -19,6 +20,7 @@ $("#q2a").click(function(){
 
 $("#q2b").click(function(){
     correctAnswers + 1;
+    return grand + correctAnswers;
 });
 
 
@@ -29,6 +31,7 @@ $("#q3a").click(function(){
 
 $("#q3b").click(function(){
     correctAnswers + 1;
+    return grand + correctAnswers;
 });
 
 
@@ -39,10 +42,12 @@ $("#q4a").click(function(){
 
 $("#q4b").click(function(){
     correctAnswers + 1;
+    return grand + correctAnswers;
 });
 
 $("#q5a").click(function(){
     correctAnswers + 1;
+    return grand + correctAnswers;
   
 });
 
@@ -55,3 +60,4 @@ $("#q5b").click(function(){
 
 console.log(correctAnswers);
 console.log(incorrectAnswers);
+console.log(grand);
