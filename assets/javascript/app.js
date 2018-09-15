@@ -3,5 +3,10 @@ alert("Wlecome to phil's Trivia game, Just remeber you have 120 seconds to finis
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 
-$("#q1a").click(correctAnswers + 1);
-console.log(this);
+$("#q1a").click(function(){
+    correctAnswers + 1;
+   $(correctAnswers).html("your current score is" +correctAnswer)});
+console.log(correctAnswers);
+//$("#q1b").click(function(){
+    
+
